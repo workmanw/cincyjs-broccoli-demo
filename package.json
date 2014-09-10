@@ -1,0 +1,25 @@
+{
+  "name": "cincyjs-broccoli-demo",
+  "description": "Cincy JS Broccoli",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Wesley Workman <wesley.workman@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "node_modules/.bin/bower install"
+  },
+  "devDependencies": {
+    "bower": "^1.3.9",
+    "broccoli": "^0.10.0",
+    "broccoli-concat": "~0.0.11",
+    "broccoli-env": "0.0.1",
+    "broccoli-static-compiler": "^0.1.4",
+    "broccoli-uglify-js": "^0.1.0",
+    "broccoli-es6-concatenator": "^0.1.4",
+    "broccoli-template": "^0.1.0",
+    "broccoli-coffee": "^0.1.0",
+    "broccoli-sass": "^0.2.0",
+    "broccoli-merge-trees": "^0.1.3",
+    "broccoli-bower": "^0.2.1"
+  }
+}
