@@ -2,6 +2,8 @@ var mergeTrees = require('broccoli-merge-trees');
 var findBowerTrees = require('broccoli-bower');
 var concat = require('broccoli-concat');
 var filterCoffeeScript = require('broccoli-coffee');
+var compileSass = require('broccoli-sass');
+
 
 var vendorTree = concat(mergeTrees(findBowerTrees()), {
   inputFiles: [ '**/*.js' ],
@@ -23,4 +25,6 @@ appTree = concat(appTree, {
   wrapInEval: true // (optional, defaults to false)
 });
 
-module.exports = mergeTrees(['app/public', appTree, vendorTree]);
+var styleTree = compileSass(['app/styles'], 'main.scss', '/assets/app.css');
+
+module.exports = mergeTrees(['app/public', appTree, styleTree, vendorTree]);

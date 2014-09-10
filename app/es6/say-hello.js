@@ -1,3 +1,3 @@
-export default function sayHello() {
-  $('body').append('<span>Hello from Javascript!</span></br>');
-}
+// export default function sayHello() {
+//   $('body').append('<span>Hello from Javascript!</span></br>');
+// }

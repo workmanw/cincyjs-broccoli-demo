@@ -1,0 +1,5 @@
+@import "mixins.scss";
+
+h1 {
+  @include apply-color();
+}
